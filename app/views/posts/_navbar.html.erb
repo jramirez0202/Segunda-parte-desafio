@@ -1,0 +1,12 @@
+<nav class="navbar navbar-dark bg-primary">
+  <div class="container-fluid">
+
+    <%= form_tag "/search/create", method: :get, remote: true, id:"search-form" do %>
+    <%= text_field_tag :keyword, nil, placeholder: 'search here'%>
+    <%= content_tag :button, class: 'btn btn-light btn-outline-dark', type: :submit do %>
+      Search
+    <% end %>
+  <% end %>
+  </div>
+</nav>
+
